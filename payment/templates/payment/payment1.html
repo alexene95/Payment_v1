@@ -1,0 +1,42 @@
+<!DOCTIPE html>
+<html>
+<head>
+	<title>first payment </title>
+</head>
+<body>
+	<h1>Insert your Data</h1>
+<form action="/payment/" method="post">
+{% csrf_token %}
+    <label for="CreditCardNumber">CreditCardNumber: </label>
+<li>
+<input type="text" name="CreditCardNumber" id=CreditCardNumber value = {{CreditCardNumber}}>
+</li>
+
+    <label for="CardHolder">CardHolder: </label>
+<li>
+<input type="text" name="CardHolder"  id=CardHolder value = {{CardHolder}}>
+</li>
+
+    <label for="ExpirationDate">ExpirationDate: </label>
+<li>
+<input type="date" name="ExpirationDate" id=ExpirationDate value = {{ExpirationDate}}>
+</li>
+    <label for="SecurityCode">SecurityCode: </label>
+<li>
+<input type="text" name="SecurityCode"  id=SecurityCode  value = {{SecurityCode}}>
+</li>
+
+    <label for="Amount">Amount: </label>
+<li>
+<input type="text" name="Amount"  id=Amount value = {{Amount}}>
+</li>
+<input type="submit" value="Submit">
+
+</form>
+
+
+</body>
+</html>
+
+
+ 
